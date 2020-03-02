@@ -86,7 +86,7 @@ function Home() {
     <div className="Home">
       <header className="App-header">
       <div className="header-bar">
-        <span style={{color: '#404040'}}>H</span> <span style={{color: '#d8d8d8'}}>|</span> 
+        <span style={{color: '#404040'}}>H</span> <span style={{color: '#d8d8d8'}}>| </span> 
         <span style={{color: '#404040'}}>新冠肺炎確診分佈</span>
       </div>
       <NoticeBar marqueeProps={{loop: true, style: {padding: '0 7.5px'}}}>

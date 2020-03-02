@@ -2,11 +2,12 @@ import React, { useState } from "react"
 import {TabBar, Icon} from 'antd-mobile';
 
 import Convira from './component/convira'
+import HightInfectedArea from './component/HightInfectedArea'
 import 'antd-mobile/dist/antd-mobile.css';
 import "./index.scss"
 
 function Home() {
-  const [selectTab, setSelectTab] = useState("convira")
+  const [selectTab, setSelectTab] = useState("highInfectedAreas")
 
   return (
     <div className="Home">
@@ -36,7 +37,7 @@ function Home() {
               setSelectTab("highInfectedAreas")
             }}
           >
-            highInfectedAreas tab data
+            <HightInfectedArea />
           </TabBar.Item>
           <TabBar.Item
             title="旅遊燈號"
