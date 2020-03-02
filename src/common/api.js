@@ -1,4 +1,4 @@
-import axios from "./common/util/axios"
+import axios from "./util/axios"
 
 export const getSubAgentListAsync = params =>
   axios({
