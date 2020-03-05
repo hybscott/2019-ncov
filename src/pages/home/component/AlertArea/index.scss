@@ -1,5 +1,5 @@
 :root {
-  --green: #e9e9f1;
+  --green: #04254e;
   --bgcolor: #e9e9f1;
 }
 
@@ -7,12 +7,13 @@
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+  background: #e9e9f1;
 }
 
 .alertAreaWrapper {
   padding: 1px;
   .chartWrapper {
-    background: #e6e6ff;
+    background: --green;
   }
   .solidGaugeCt {
     color: white;
@@ -22,12 +23,13 @@
     background-color: var(--green);
     clip-path: circle(90% at 50% 10%);
     .title {
+      font-size: 14px;
       text-align: center;
       padding-top: 20px;
     }
     .gaugeChart {
       width: 100%;
-      height: 70vw;
+      height: 200px;
       margin-left: auto;
       margin-right: auto;
       position: relative;
@@ -35,11 +37,14 @@
         color: red;
       }
     }
+    .infectedNum {
+      text-align: center;
+    }
   }
   .lineChartCt {
     .infectedCt {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       margin: 0 auto;
       display: flex;
       justify-content: center;
@@ -49,6 +54,56 @@
       top: -32px;
       position: relative;
       border-radius: 50%;
+    }
+  }
+  .countryName {
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    .countryType {
+      margin-left: 10px;
+      text-align: center;
+      font-size: 12px;
+      padding: 2px 0;
+      display: inline-block;
+      width: 38px;
+      height: 17px;
+      background: #d8d8d8;
+      clip-path: polygon(
+        0px 5px,
+        5px 0px,
+        33px 0px,
+        38px 5px,
+        38px 12px,
+        33px 17px,
+        5px 17px,
+        0px 12px
+      );
+    }
+    .right {
+      margin-right: 10px;
+      .countryType {
+        background: transparent;
+        color: #8a54a2;
+      }
+      .name {
+        margin: 0;
+        color: #8a54a2;
+      }
+    }
+    .name {
+      font-size: 20px;
+      color: white;
+      margin-left: 10px;
+    }
+  }
+  .flagLine {
+    margin: 0 0 0 10px;
+    text-align: left;
+    .flag {
+      font-size: 24px;
     }
   }
 }
