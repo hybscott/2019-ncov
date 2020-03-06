@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from "react";
-import ZingChart from "zingchart";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
@@ -127,23 +126,36 @@ function Home() {
                   <span className="name">12</span>
                 </span>
               </p>
-              <p className="flagLine">
-                <span className="flag">🇹🇼</span>
-              </p>
             </div>
             <div className="chartWrapper">
-              <div
-                className="gaugeChart"
-                id="chartdiv"
-                // style={{ width: "80%" }}
-              ></div>
+              <div className="gaugeChart" id="chartdiv"></div>
             </div>
-            {/* <div className="infectedNum">確診人數：42</div> */}
           </div>
-          <div className="lineChartCt">
+          <div className="flagCt">
+            {/* <p className="flagLine">
+                <span className="flag">🇹🇼</span>
+              </p> */}
+          </div>
+          <div className="methods">
+            {/* <span className="star">✡️✡️✡️🔯🔯</span> */}
+            <p>
+              <span className="star">✡️✡️</span>
+              <span className="desc">勤洗手戴口罩</span>
+            </p>
+            <p>
+              <span className="star">✡️✡️✡️🔯🔯</span>
+              <span className="desc">時鐘召喚</span>
+            </p>
+            <p>
+              <span className="star">✡️✡️✡️</span>
+              <span className="desc">國籍選了要承擔</span>
+            </p>
+            <span className="star"></span>
+          </div>
+          {/* <div className="lineChartCt">
             <div className="infectedCt">42人</div>
             <div className="lineChart" id="lineChart"></div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
